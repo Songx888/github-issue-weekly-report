@@ -1,0 +1,26 @@
+{
+  "name": "github-issue-weekly-report",
+  "version": "0.1.0",
+  "description": "Generate weekly project reports from GitHub Issues and Pull Requests.",
+  "type": "module",
+  "bin": {
+    "github-weekly-report": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node ./src/index.js --config config.example.json",
+    "demo": "node ./src/index.js --config examples/demo.config.json --mock examples/demo-data.json",
+    "test": "node --test"
+  },
+  "keywords": [
+    "github",
+    "issues",
+    "pull-requests",
+    "weekly-report",
+    "github-actions"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
