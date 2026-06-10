@@ -1,0 +1,58 @@
+name: Setup request
+description: Request help setting up GitHub Issue Weekly Report.
+title: "Setup request: "
+labels: ["setup-request"]
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: Repository URL
+      description: The GitHub repository you want to generate reports for.
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: visibility
+    attributes:
+      label: Repository visibility
+      options:
+        - Public
+        - Private
+    validations:
+      required: true
+  - type: textarea
+    id: labels
+    attributes:
+      label: Label rules
+      description: Which labels mean done, in progress, and blocked?
+      placeholder: |
+        Done: done, completed
+        In progress: in-progress, doing
+        Blocked: blocked
+    validations:
+      required: true
+  - type: input
+    id: schedule
+    attributes:
+      label: Report schedule
+      placeholder: Every Monday 09:00 Asia/Shanghai
+    validations:
+      required: true
+  - type: dropdown
+    id: output
+    attributes:
+      label: Output target
+      options:
+        - Markdown
+        - Feishu
+        - WeCom
+        - Slack
+        - Email
+        - Notion
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Extra notes
+      description: Any custom template or reporting requirement?
