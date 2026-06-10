@@ -1,0 +1,11 @@
+{
+  "owner": "your-org",
+  "repo": "your-repo",
+  "sinceDays": 7,
+  "output": "weekly-report.md",
+  "labels": {
+    "done": ["done", "completed"],
+    "doing": ["in-progress", "doing"],
+    "blocked": ["blocked"]
+  }
+}
