@@ -1,0 +1,11 @@
+{
+  "owner": "demo-org",
+  "repo": "demo-product",
+  "sinceDays": 7,
+  "output": "examples/demo-weekly-report.md",
+  "labels": {
+    "done": ["done", "completed"],
+    "doing": ["in-progress", "doing"],
+    "blocked": ["blocked"]
+  }
+}
